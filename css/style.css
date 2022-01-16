@@ -16,7 +16,7 @@
     /* border: 2px solid black; */
 }
 .common h2{
-    font-size: 42px;
+    font-size: 35px;
 }
 .common p{
     text-align: left;
@@ -38,21 +38,21 @@ nav{
 .influncer{
     display: grid;
     grid-template-columns: repeat(2,1fr);
+    justify-content: center;
     grid-column-gap: 133px;
 }
-.influncer-image{
-    padding-top: 30px;
+.influncer-image img{
+    /* background-color: chartreuse; */
+    padding: 30px;
 }
 
-.influncer-image:hover {
+.influncer-image:hover img{
     background-image: url(/images/Circle\ design.svg);
     background-repeat: no-repeat;
-    transform: rotate(20deg) scale(0.82) translate(50px,-10px);
-    border: 18px double rgb(69, 71, 67);
-    border-radius: 850px 240px;
+    transform: rotate(20deg) scale(0.92) translate(150px, -100px);
     position: relative;
-    top: 10px;
-    left: -150px;
+    top: 9px;
+    left: -120px;
     
 }
 button{
@@ -65,18 +65,35 @@ button{
 
 
 /* <!-- Secound section end --> */
-.section-title{
-    width: 1030px;
+
+/* <!-------------Online Seller start-------------> */
+
+.brand-section .brand-logo img{
+    display: inline-block;
+    margin-left: 50px;
 }
-.section-title h1{
-    font-size: 28px;
-    text-align: center;
-    margin-bottom: 30px;
+hr{
+    border: 2px solid #d1d1d196;
+    border-radius: 70px;
+    margin: 10px 10px;
 }
+
+/* <!-------------Online Seller end-------------> */
+
 
 .contanier{
     margin: 90px 197px 100px 110px;
 }
+.contanier .section-title{
+    text-align: center;
+    padding-bottom: 30px;
+    
+}
+.contanier .section-title h1{
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
 .contanier .see-more a{
     padding-top: 30px;
     text-decoration: none;
@@ -132,22 +149,28 @@ button{
     letter-spacing: 0.08em;
 }
 
-/* My Addition */
+/* My Addition start */
 
 .additional{
     display: grid;
     grid-template-columns: repeat(2,1fr);
 }
 .my-addition .about-us p{
+    font-size: 14px;
     margin-bottom: 40px;
     text-align: justify;
+}
+.find-location{
+    padding-bottom: 30px;
 }
 .find-location .location-icon img{
     width: 20%;
 }
+/* My Addition end */
 
+/* --------------------------------- */
 
-/* footer */
+/* footer start */
 footer{
     background-color: #0f0e0e;
     width: 100%;
@@ -172,7 +195,9 @@ footer .social .fab{
     color: white;
 }
 
-/* media  */
+/* footer end */
+/* ---------------------------------------------- */
+/*----------- Media Quaries----------- */
 @media only screen and (max-width:680px) { 
     .header{
     display: block;    
