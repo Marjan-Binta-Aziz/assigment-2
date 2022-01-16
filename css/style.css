@@ -173,7 +173,7 @@ footer .social .fab{
 }
 
 /* media  */
-@media only screen and (max-width:688px) { 
+@media only screen and (max-width:680px) { 
     .header{
     display: block;    
 }
@@ -201,17 +201,18 @@ footer .social .fab{
         width: 100%;
     }
 }
-@media only screen and (min-width:688px) and (max-width:992px) {
+@media only screen and (min-width:680px) and (max-width:992px) {
     .influncer{
         width: 100%;
         grid-template-columns: repeat(1,1fr);
         justify-content: center;
-        background-color: brown;
+        /* background-color: brown; */
     }
     .contanier h1{
         display: block;
     }
     .contanier .products{
+        margin-left: -220px;
         grid-template-columns: repeat(2,1fr);
     }
     .additional{
