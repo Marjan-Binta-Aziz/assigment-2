@@ -1,0 +1,225 @@
+/* font style */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Poppins:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(53, 49, 49);
+    
+}
+
+.common{
+    padding-left: 120px;
+    padding-top: 87px;
+    padding-right: 120px;
+    /* border: 2px solid black; */
+}
+.common h2{
+    font-size: 42px;
+}
+.common p{
+    text-align: left;
+    margin-top: 16px;
+}
+/* nav */
+nav a{
+    text-decoration: none;
+    font-size: 15px;
+    padding: 10px;
+}
+nav{
+    padding-left: 170px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* <!-- part-1 start--> */
+.influncer{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-column-gap: 133px;
+}
+.influncer-image{
+    padding-top: 30px;
+}
+
+.influncer-image:hover {
+    background-image: url(/images/Circle\ design.svg);
+    background-repeat: no-repeat;
+    transform: rotate(20deg) scale(0.82) translate(50px,-10px);
+    border: 18px double rgb(69, 71, 67);
+    border-radius: 850px 240px;
+    position: relative;
+    top: 10px;
+    left: -150px;
+    
+}
+button{
+    background-color: skyblue;
+    padding: 10px 24px;
+    margin-top: 30px;
+    border-radius: 10px;
+    font-weight: bolder;
+}
+
+
+/* <!-- Secound section end --> */
+.section-title{
+    width: 1030px;
+}
+.section-title h1{
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.contanier{
+    margin: 90px 197px 100px 110px;
+}
+.contanier .see-more a{
+    padding-top: 30px;
+    text-decoration: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.contanier .see-more a,i{
+    padding-left: 10px;
+}
+
+.products{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    
+}
+.products .product{
+    width: 329px;
+    height: 476px;
+    border-radius: 5px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    /* border: 5px solid yellowgreen; */
+}
+.products .product img{
+    width: 300px;
+    height: 256px;
+    padding: 17px 15px 14px;
+}
+.product-info{
+    margin-left: 14px;
+}
+.product-info h3{
+    font-size: 28px;
+}
+.product-info .product-price{
+    font-size: 24px;
+    color: rgba(0, 0, 0, 0.603);
+}
+.product-star .fas{
+    color: rgba(255, 136, 0, 0.822);
+}
+.product-info .product-details {
+    width: 196px;
+    height: 61px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: left;
+    color: #787885;
+    line-height: 20px;
+    letter-spacing: 0.08em;
+}
+
+/* My Addition */
+
+.additional{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.my-addition .about-us p{
+    margin-bottom: 40px;
+    text-align: justify;
+}
+.find-location .location-icon img{
+    width: 20%;
+}
+
+
+/* footer */
+footer{
+    background-color: #0f0e0e;
+    width: 100%;
+    text-align: center;
+}
+.footer-width{
+    padding: 50px;
+}
+footer .width h1{
+    color: white;
+    font-size: 24px;
+    justify-content: center;
+}
+footer .width p{
+    color: white;
+    font-size: 14px;
+}
+
+footer .social .fab{
+    margin-top: 17px;
+    padding-left: 16px;
+    color: white;
+}
+
+/* media  */
+@media only screen and (max-width:688px) { 
+    .header{
+    display: block;    
+}
+    .influncer{
+        width: 100%;
+        grid-template-columns: repeat(1,1fr);
+        /* background-color: brown; */
+    }
+    .contanier, .section-title, .see-more{
+        /* display: block; */
+        grid-template-columns: repeat(1,1fr);
+        width: 20%;
+    }
+
+    .contanier, .products, .section-title{
+        /* background-color: chartreuse; */
+        grid-template-columns: repeat(1,1fr);
+        flex-direction: column;
+    }
+    .additional{
+        grid-template-columns: repeat(1,1fr);
+        /* background-color: darkblue; */
+    }
+    footer{
+        width: 100%;
+    }
+}
+@media only screen and (min-width:688px) and (max-width:992px) {
+    .influncer{
+        width: 100%;
+        grid-template-columns: repeat(1,1fr);
+        justify-content: center;
+        background-color: brown;
+    }
+    .contanier h1{
+        display: block;
+    }
+    .contanier .products{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .additional{
+        grid-template-columns: repeat(1,1fr);
+        /* background-color: darkblue; */
+    }
+    footer{
+        width: 100%;
+    }
+
+}
