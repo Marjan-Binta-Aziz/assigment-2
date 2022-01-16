@@ -212,7 +212,6 @@ footer .social .fab{
         display: block;
     }
     .contanier .products{
-        margin-left: -220px;
         grid-template-columns: repeat(2,1fr);
     }
     .additional{
