@@ -122,7 +122,7 @@ hr{
 }
 .products .product img{
     width: 300px;
-    height: 256px;
+    height: 259px;
     padding: 17px 15px 14px;
 }
 .product-info{
@@ -202,9 +202,14 @@ footer .social .fab{
     .header{
     display: block;    
 }
-    .influncer{
+    .influncer, .common{
+        width: 100%;
         grid-template-columns: repeat(1,1fr);
         /* background-color: brown; */
+    }
+.influncer-image>img{
+    display: block;
+    width: 250px;
     }
     .contanier, .section-title, .see-more{
         /* display: block; */
@@ -217,6 +222,7 @@ footer .social .fab{
         grid-template-columns: repeat(1,1fr);
         flex-direction: column;
     }
+
     .additional{
         grid-template-columns: repeat(1,1fr);
         /* background-color: darkblue; */
