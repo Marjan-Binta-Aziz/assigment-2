@@ -203,7 +203,6 @@ footer .social .fab{
     display: block;    
 }
     .influncer{
-        width: 100%;
         grid-template-columns: repeat(1,1fr);
         /* background-color: brown; */
     }
@@ -213,7 +212,7 @@ footer .social .fab{
         width: 20%;
     }
 
-    .contanier, .products, .section-title{
+    .contanier, .section-title, .products{
         /* background-color: chartreuse; */
         grid-template-columns: repeat(1,1fr);
         flex-direction: column;
